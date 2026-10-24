@@ -1,0 +1,33 @@
+.container { display: flex; flex-direction: column; background: #161b22; flex: 0 0 28%; min-width: 372px; max-width: 480px; min-height: 0; border-left: 1px solid #30363d; }
+.placeholder {
+  display: flex; align-items: center; justify-content: center;
+  min-height: 200px; color: #8b949e; font-size: 12px;
+}
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 4px 8px; border-bottom: 1px solid #21262d; flex-shrink: 0;
+}
+.headerTitle { color: #8b949e; font-size: 10px; }
+.headerRight { margin-left: auto; display: flex; align-items: center; gap: 6px; }
+.exportBtn {
+  background: #21262d; border: 1px solid #30363d; color: #c9d1d9;
+  padding: 2px 7px; border-radius: 4px; cursor: pointer; font-size: 10px; white-space: nowrap;
+}
+.exportBtn:hover:not(:disabled) { background: #30363d; }
+.exportBtn:disabled { opacity: 0.4; cursor: default; }
+.expandBtn {
+  background: none; border: none; cursor: pointer; color: #8b949e;
+  font-size: 14px; padding: 0 2px; line-height: 1;
+}
+.expandBtn:hover { color: #c9d1d9; }
+
+.scroll { overflow-y: auto; display: flex; flex-direction: column; }
+.panel { border-bottom: 1px solid #21262d; padding: 2px 0 4px; }
+.panelHead {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 2px 8px 0;
+}
+.panelLabel { color: #c9d1d9; font-size: 10px; font-weight: 600; }
+
+.legend { display: flex; gap: 8px; flex-wrap: wrap; }
+.legendItem { display: flex; align-items: center; gap: 3px; color: #8b949e; font-size: 9px; }

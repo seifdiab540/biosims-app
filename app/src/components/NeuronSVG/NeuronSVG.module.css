@@ -1,0 +1,8 @@
+.selected {
+  filter: drop-shadow(0 0 6px #58a6ff88);
+}
+
+.compartmentHit:hover {
+  filter: brightness(1.4);
+  cursor: pointer;
+}

@@ -1,0 +1,99 @@
+.dialog {
+  position: fixed; inset: 0; margin: auto;
+  width: min(1120px, 96vw);
+  max-height: 92vh;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  color: #c9d1d9;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Body: graphs (left, scroll/zoom) + parameter sidebar (right, edit live). */
+.body { display: flex; flex: 1; min-height: 0; }
+.graphs { flex: 1; min-width: 0; overflow-y: auto; }
+.paramSidebar {
+  flex: 0 0 290px; overflow-y: auto;
+  border-left: 1px solid #21262d; padding: 0 12px 14px;
+}
+.sidebarTitle {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em;
+  color: #768390; font-weight: 700; padding: 10px 0 8px;
+  position: sticky; top: 0; background: #161b22;
+}
+
+.dialog::backdrop {
+  background: rgba(0,0,0,0.7);
+}
+
+.header {
+  display: flex; align-items: center; gap: 8px;
+  padding: 10px 16px;
+  border-bottom: 1px solid #21262d;
+  position: sticky; top: 0; background: #161b22; z-index: 1;
+}
+
+.title { font-size: 13px; font-weight: 600; flex: 1; }
+.hint  { font-size: 10px; color: #8b949e; }
+
+.closeBtn {
+  background: none; border: none; cursor: pointer;
+  color: #8b949e; font-size: 16px; padding: 2px 6px;
+  border-radius: 4px;
+}
+.closeBtn:hover { background: #21262d; color: #c9d1d9; }
+
+.axisControls {
+  display: flex; align-items: center; gap: 6px;
+  padding: 6px 16px 4px;
+}
+.axisLabel { font-size: 11px; color: #8b949e; }
+.axisInput {
+  width: 58px; padding: 2px 6px; font-size: 11px;
+  background: #0d1117; border: 1px solid #30363d; border-radius: 4px;
+  color: #c9d1d9; text-align: right;
+}
+.axisInput:focus { outline: none; border-color: #58a6ff; }
+.axisSep { color: #8b949e; font-size: 11px; }
+.axisUnit { color: #8b949e; font-size: 11px; }
+.autoBtn {
+  padding: 2px 10px; font-size: 11px;
+  background: #21262d; border: 1px solid #30363d; border-radius: 4px;
+  color: #c9d1d9; cursor: pointer;
+}
+.autoBtn:hover { background: #30363d; }
+
+.panelLabel {
+  padding: 6px 16px 2px;
+  font-size: 10px;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.legend {
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  padding: 8px 16px 12px;
+  font-size: 10px;
+  color: #8b949e;
+  border-top: 1px solid #21262d;
+}
+
+.legendItem {
+  display: flex; align-items: center; gap: 4px;
+  color: #c9d1d9;
+}
+
+.legendHint { color: #6e7681; }
