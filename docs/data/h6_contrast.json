@@ -1,0 +1,72 @@
+{
+  "generatedAt": "2026-07-05T17:02:32.208Z",
+  "version": "0.65",
+  "gitSha": "85f8394",
+  "sourceFile": "docs/data/sources/h6-period-control-2026-06-28T17-55-14-317Z.json",
+  "caption": {
+    "en": "One and the same measurements from round 2. Looking only at the effect strength (first reading), gKd and gCaS appear to be the strongest pacemakers. The round-2 revision then read their large values as collapse (second reading) — a real step forward at the time. But this reading was itself still too coarse: as the voltage traces below show, much of what it called collapse was a rhythm that kept running. The honest measure is the collapse-free reach in the table above, not this binary.",
+    "de": "Ein und dieselben Messungen aus Runde 2. Sieht man nur die Effektstärke (erste Sichtweise), erscheinen gKd und gCaS als stärkste Taktgeber. Die Revision aus Runde 2 deutete ihre großen Werte dann als Kollaps (zweite Sichtweise) — ein echter Fortschritt damals. Doch diese Deutung war selbst noch zu grob: Wie die Spannungsverläufe weiter unten zeigen, war vieles, was sie Kollaps nannte, ein weiterlaufender Rhythmus. Die ehrliche Maßzahl ist die kollapsfreie Steuerreichweite in der Tabelle oben, nicht diese Zweiteilung."
+  },
+  "rows": [
+    {
+      "conductance": "abpd.gKd",
+      "slopeNearZero": 14.483,
+      "collapsedFraction": 0.804,
+      "thresholdCrossed": 1,
+      "readingSlopeOnly": {
+        "en": "strong pacemaker (the first reading)",
+        "de": "starker Taktgeber (so die erste Deutung)"
+      },
+      "readingCollapseAware": {
+        "en": "looked like collapse (round-2 reading)",
+        "de": "schien Kollaps zu sein (Deutung aus Runde 2)"
+      },
+      "collapsed": true
+    },
+    {
+      "conductance": "abpd.gCaS",
+      "slopeNearZero": 15.205,
+      "collapsedFraction": 0.686,
+      "thresholdCrossed": 1,
+      "readingSlopeOnly": {
+        "en": "strong pacemaker (the first reading)",
+        "de": "starker Taktgeber (so die erste Deutung)"
+      },
+      "readingCollapseAware": {
+        "en": "looked like collapse (round-2 reading)",
+        "de": "schien Kollaps zu sein (Deutung aus Runde 2)"
+      },
+      "collapsed": true
+    },
+    {
+      "conductance": "abpd.gCaT",
+      "slopeNearZero": 7.122,
+      "collapsedFraction": 0,
+      "thresholdCrossed": 0,
+      "readingSlopeOnly": {
+        "en": "strong pacemaker (the first reading)",
+        "de": "starker Taktgeber (so die erste Deutung)"
+      },
+      "readingCollapseAware": {
+        "en": "steers the pace cleanly",
+        "de": "steuert den Takt sauber"
+      },
+      "collapsed": false
+    },
+    {
+      "conductance": "abpd.gKCa",
+      "slopeNearZero": 4.036,
+      "collapsedFraction": 0,
+      "thresholdCrossed": 0,
+      "readingSlopeOnly": {
+        "en": "strong pacemaker (the first reading)",
+        "de": "starker Taktgeber (so die erste Deutung)"
+      },
+      "readingCollapseAware": {
+        "en": "steers the pace cleanly",
+        "de": "steuert den Takt sauber"
+      },
+      "collapsed": false
+    }
+  ]
+}
