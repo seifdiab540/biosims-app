@@ -10,7 +10,6 @@ language model proposes and interprets experiments while **deterministic code
 computes every quantitative result**. No reported number is entered by hand. The
 scientific findings are written up as publication-near companion reports.
 
-> Authors: **Arne E. Sauer** · **Robert Driesang**
 
 ---
 
